@@ -1,0 +1,43 @@
+footer{
+  padding:64px 0 88px 0;
+  font-size:14px;
+
+  @include for-tablet-portrait-up {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .logos-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:56px;
+
+    @include for-tablet-portrait-up {
+      
+    }
+    
+  }
+
+  .american-forests{
+
+    @include for-tablet-portrait-up {
+      margin-left:104px;
+    }
+
+    img{
+      margin-bottom:24px;
+    }
+  }
+
+  .rights{
+
+    a{
+      color:$gray1;
+
+      &:hover{
+        opacity:.9;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,98 @@
+---
+layout: default
+title: home
+---
+
+<section id="home">
+
+    <div class="mx-auto" >
+    <section class="about">
+
+        <h2>Tree Equity Score Methodology</h2>
+        <p class="small">A Tree Equity Score is a metric that helps cities assess how well they are delivering equitable tree canopy cover to all residents. The score combines measures of tree canopy cover need and priority for trees in urban neighborhoods. It is derived from tree canopy cover, climate, demographic and socioeconomic data.</p>
+        <p class="small">The score is aggregated at the neighborhood (block group) and municipal levels.</p>
+        <p class="small">The following describes our science-driven methodology for calculating Tree Equity Score in any city in the country.</p>
+        <h4>Step 1: A Neighborhood Goal</h4>
+
+        <h6>Density Adjusted Canopy Target</h6>
+        <p class="small">The canopy target -- which is meant to be equitable, aspirational and achievable --  requires the following data:</p>
+        <ul>
+            <li>Tree canopy cover. High resolution tree canopy where available, the National Land Cover Database where it is not.  </li>
+            <li>Census American Community Survey (ACS) 2018 5-year Block Group population estimates</li>
+            <li>Census ACS 2018 5-year city and block group Median Income estimates</li>
+        </ul>
+
+        <p class="small">To identify a baseline canopy target, we use generalized natural biome baseline targets selected in conjunction with the United States Forests Service. We select the baseline target based on the location of the municipality.</p>
+        <ul>
+            <li>Forest: 40%</li>
+            <li>Grassland: 25%</li>
+            <li>Desert: 20%</li>
+        </ul>
+        <p class="small">This target is then adjusted based on population density to estimate a neighborhood goal. Based on research completed by The Nature Conservancy, adjustments are made using the following table:</p>
+        <table>
+            <tr>
+                <th>Population Density (ppl/km2)</th>
+                <th>Target Canopy Adjustment factor</th>
+            </tr>
+            <tr>
+                <td>Very low (<2k)</td>
+                <td>1.2</td>
+            </tr>
+            <tr>
+                <td>Low (2k-4k)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Moderate (4k-8k)</td>
+                <td>0.8</td>
+            </tr>
+            <tr>
+                <td>High (>8k)</td>
+                <td>0.5</td>
+            </tr>
+         </table>
+         <br/>
+
+         <p class="small">Adjusting for population density makes for more achievable targets, while recognizing differences in plantable areas suitable for tree canopy. Note: Neighborhood goals are capped at 150% of the natural biome baseline target. </p>
+         <p class="small">The formula for each neighborhood goal, GOAL, is as follows: <i>GOAL = Baseline target * Density adjustment factor</i></p>
+
+         <h4>Step 2: The Canopy Gap</h4>
+         <p class="small">The neighborhood canopy gap, GAP, is calculated by subtracting the existing neighborhood canopy from the density adjusted target, that is: <i>GAP = GOAL – EC, where EC is existing % canopy for that neighborhood</i></p>
+         <p class="small">The canopy Gap is then normalized to a score from 0-100.</p>
+         <p class="small">GAPScore=100*GAP - GAPminGAPmax - GAPmin , where:</p>
+         <ul>
+             <li>GAPmax is the maximum GAP value citywide for that indicator; and</li>
+             <li>GAPmin is the minimum GAP value citywide for that indicator.</li>
+         </ul>
+         <p class="small"><strong>Note: </strong>If the GAP is negative (i.e. Existing canopy is greater than the neighborhood goal), it is adjusted to 0 before normalizing to create the gap score. </p>
+
+         <h4>Step 3: The Priority Index</h4>
+         <p class="small">The Priority Index is developed to help prioritize the need for planting to achieve Tree Equity. The priority index includes the following equally-weighted characteristics:</p>
+         <ul>
+             <li><i>Income:</i>  Percentage of population below 200% of poverty</li>
+             <li><i>Employment:</i> Unemployment rate</li>
+             <li><i>Race:</i> Percentage of people who are not white non-Hispanic</li>
+             <li><i>Climate:</i> Urban Heat Island severity</li>
+             <li></li>
+         </ul>
+         <p class="small">These measures are normalized and combined to create a simple priority index from 0 to 1, where 1 indicates a greater amount of inequity. The indices, N, are calculated as follows:</p>
+         <p class="small">N=x-xminxmax - xmin , where, for each indicator, N,</p>
+         <ul>
+             <li>x is the value for that neighborhood for that indicator;</li>
+             <li>xmax is the maximum value citywide for that indicator; and</li>
+             <li>xmin is the minimum value citywide for that indicator.</li>
+         </ul>
+         <p class="small">The Priority index, E, is then calculated as follows: <i>E = (N1 + N2 + N3 + N4) / 4  , where Ni refers to each indicator value (income, employment, race, or climate)</i></p>
+
+         <h4>Step 4: Tree Equity Score</h4>
+         <p class="small">Tree equity Score is calculated by multiplying the Baseline Gap Score by the Equity Index, simply:</p>
+         <p class="small">Tree Equity Score = 100 * (1 - GAPScore * E)</p>
+         <p class="small">A lower tree equity score indicates a greater level of need for tree canopy.</p>
+
+    </section>
+    </div>
+
+</section>
+
+<script>   
+</script>

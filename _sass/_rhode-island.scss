@@ -1,0 +1,422 @@
+#rhode-island{
+
+  .hero{
+    padding:72px 0 72px 0;
+
+    @include for-tablet-landscape-up {
+      padding:32px 0 72px 0;
+    }
+
+    .layout{
+
+      @include for-tablet-landscape-up { 
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap:24px;
+        position:relative;
+      }
+
+    }
+
+    .text{
+
+      @include for-tablet-landscape-up { 
+        grid-column: 1 / 5;
+        margin-top:144px;
+      }
+    }
+
+    h2{
+      margin-bottom:24px;
+    }
+
+    p{
+      margin-bottom:32px;
+    }
+
+    .image{
+      margin-top:72px;
+
+      img{
+        width:100%;
+      }
+
+      @include for-tablet-landscape-up { 
+        margin-top:0;
+        grid-column: 5 / 13;
+        height:730px;
+        width:100%;
+        position:relative;
+
+        img{
+          height:100%;
+          width:auto;
+          position:absolute;
+        }
+      }
+    
+    }
+  }
+
+  .how-it-works{
+    padding:64px 0 96px 0;
+    position: relative;
+
+    @include for-desktop-up { 
+      padding:72px 0 104px 0;
+    }
+
+    &:after {
+      content:" ";
+      top:0;
+      left:50%;
+      transform: translate(-50%, 0);
+      z-index:-1;
+      width:100vw;
+      height:100%;
+      position: absolute;
+      background:$gray2;
+      opacity:.15;
+    }
+
+    h4{
+      text-align: center;
+      margin:0 auto;
+      margin-bottom:56px;
+
+      @include for-desktop-up { 
+        margin-bottom:64px;
+      }
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap:24px;
+      grid-row-gap:40px;
+      justify-items: center;
+
+      @include for-desktop-up { 
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .column{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align:center;
+      padding:32px 32px 56px 32px;
+      height:348px;
+      background:white;
+      border: 1px solid rgba($gray1,0.10);
+      border-radius:8px;
+      max-width:290px;
+    }
+
+    .column3{
+      img{
+        margin-right:-32px;
+      }
+    }
+
+    h6{
+      font-weight:600;
+    }
+
+  }
+
+  .features{
+    padding:56px 0 80px 0;
+
+    @include for-tablet-landscape-up { 
+      padding:104px 0;
+    }
+
+    .layout{
+
+      @include for-tablet-landscape-up { 
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap:24px;
+        position:relative;
+      }
+    }
+
+    .image-for-mobile{
+      display: block;
+      margin-top:72px;
+
+        img{
+          width:100%;
+        }
+
+      @include for-tablet-landscape-up { 
+        display:none;
+      }
+    }
+
+    .image-for-desktop{
+      display:none;
+
+      @include for-tablet-landscape-up { 
+        display: block;
+        grid-column: 1 / 8;
+        position:relative;
+        height:550px;
+    
+        img{
+          right:0;
+          position:absolute;
+          height:100%;
+        }
+      }
+    }
+
+    .text{
+      margin-left:16px;
+
+      @include for-tablet-landscape-up { 
+        padding-top:40px;
+        grid-column: 9 / 13;
+      }
+    }
+
+    h4{
+      margin-bottom:32px;
+    }
+
+    ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      margin-bottom:40px;
+    }
+
+    li{
+      margin-bottom:24px;
+      position:relative;
+
+      &:after{
+        position: absolute;
+        content:"\002B";
+        top:0;
+        left:-18px;
+        font-size:18px;
+      }
+    }
+
+  }
+
+  .why-trees{
+    padding:80px 0;
+    position:relative;
+
+    &:after {
+      content:" ";
+      top:0;
+      left:50%;
+      transform: translate(-50%, 0);
+      z-index:-1;
+      width:100vw;
+      height:100%;
+      position: absolute;
+      background:url("../static/media/why-trees-bg.png");
+    }
+
+    h4{
+      text-align: center;
+      margin:0 auto;
+      margin-bottom:48px;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap:24px; 
+      grid-row-gap:64px; 
+
+      @include for-tablet-landscape-up { 
+        grid-template-columns: repeat(4, 1fr); 
+      }
+    }
+
+    .column{
+      text-align:center;
+      padding:0px;
+
+      @include for-tablet-landscape-up { 
+        margin-bottom:0;
+        padding:0 16px;
+      }
+    }
+
+    p{
+      margin-top:8px;
+
+      @include for-tablet-landscape-up { 
+        margin-top:16px;
+      }
+    }
+
+  }
+
+  .rhode-islanders{
+    padding:56px 0 80px 0;
+
+    @include for-desktop-up {   
+      padding:96px 0;
+    }
+
+    .layout{
+      position:relative;
+
+      @include for-tablet-landscape-up {   
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap:24px;
+      }
+
+    }
+
+    h3{
+      margin-bottom:32px;
+    }
+
+    .stats{
+      margin-top:56px;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap:24px;
+      grid-row-gap:40px;
+    }
+
+    h4{
+      color: $orange;
+      margin-bottom:8px;
+    }
+
+    .image-for-mobile{
+      display: block;
+      background:url("../static/media/ri.png");
+      background-position: center center;
+      background-size: cover; 
+      width:100%;
+      height:300px;
+      margin-bottom:32px;
+      margin-top:40px;
+
+      @include for-tablet-landscape-up {
+        display:none;
+      }
+    }
+
+    .image-for-desktop{
+      display:none;
+
+      @include for-tablet-landscape-up {
+        display: block;
+        background:url("../static/media/ri.png");
+        background-position: center center;
+        background-size: cover; 
+        margin-left:40px;
+        left:50%;
+        width:calc(50vw - 40px);
+        height:100%;
+        position: absolute;   
+      }
+    }
+
+  }
+
+  .cta-banner{
+    padding:80px 0;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:after {
+      content:" ";
+      top:0;
+      left:50%;
+      transform: translate(-50%, 0);
+      z-index:-1;
+      width:100vw;
+      height:100%;
+      position: absolute;
+      background:url("../static/media/cta-banner-bg.png");
+    }
+
+    h4{
+      text-align: center;
+      margin-bottom:16px;
+    }
+
+    p{
+      margin-bottom:40px;
+      text-align: center;
+    }
+
+  }
+
+  .partners{
+    padding:80px 0 88px 0;
+    border-bottom: 1px solid rgba($gray1,0.15);
+
+    @include for-tablet-landscape-up {   
+      padding:80px 0 120px 0;
+    }
+
+    h4{
+      text-align: center;
+      margin:0 auto;
+      margin-bottom:24px;
+    }
+
+    p{
+      text-align:center;
+      margin:0 auto;
+      margin-bottom:56px;
+
+      @include for-tablet-landscape-up {   
+        margin-bottom:88px;
+      }
+    }
+
+    .layout{
+
+      @include for-tablet-landscape-up {   
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap:24px;
+      }
+    }
+
+    .column{
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      margin-bottom:88px;
+
+      &:last-child{
+        margin-bottom:0;
+      }
+
+      @include for-tablet-landscape-up {   
+        margin-bottom:0;
+      }
+
+    }
+
+  }
+
+}

@@ -11,6 +11,16 @@ $green3:#5EB546;
 $green-59: #6CC296;
 $orange: #F99D3E;
 
+// SPACING
+$te-space-xxs: 4px;
+$te-space-xs: 8px;
+$te-space-s: 12px;
+$te-space-m: 16px;
+$te-space-l: 24px;
+$te-space-xl: 32px;
+$te-space-xxl: 48px;
+$te-space-xxxl: 64px;
+
 // Mixins
 @mixin font-smoothing {
     -webkit-font-smoothing: antialiased;

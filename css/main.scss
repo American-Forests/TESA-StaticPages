@@ -37,6 +37,14 @@ main{
   left:-9999px;
 }
 
+p.small + ul.small {
+  margin-top: -22px;
+}
+
+.table {
+  margin: 0 0 5em;
+}
+
 #home{
 
   .hero{
@@ -56,7 +64,9 @@ main{
       width:100vw;
       height:100%;
       position: absolute;
-      background:url("../static/media/hero-bg.png");
+      background:url("../static/media/hero-bkg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .layout{
@@ -101,12 +111,12 @@ main{
     }
 
     h1{
-      color:white;
+      color: $white;
       margin-bottom:24px;
     }
     
     p{
-      color:white;
+      color: $white;
       font-weight:600;
       font-size:22px;
     }
@@ -442,8 +452,8 @@ main{
       width:200vw;
       height:100%;
       position: absolute;
-      background-color:white;
-      color: black;
+      background-color: $white;
+      color: $black;
     }
 
     h2 {
@@ -482,5 +492,9 @@ main{
   width: 80%;
 }
 .dropdown a {
-  color: black;
+  color: $black;
+}
+
+.te-text-color-brand {
+  color: $green-59;
 }

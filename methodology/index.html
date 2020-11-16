@@ -58,17 +58,19 @@ title: home
          <br/>
 
          <p class="small">Adjusting for population density makes for more achievable targets, while recognizing differences in plantable areas suitable for tree canopy. Note: Neighborhood goals are capped at 150% of the natural biome baseline target. </p>
-         <p class="small">The formula for each neighborhood goal, GOAL, is as follows: <i>GOAL = Baseline target * Density adjustment factor</i></p>
+         <p class="small">The formula for each neighborhood goal, <i>GOAL</i>, is as follows:</p><br/>
+          
+          <p><i>GOAL = Baseline target * Density adjustment factor</i></li></p>
+            
 
          <h4>Step 2: The Canopy Gap</h4>
-         <p class="small">The neighborhood canopy gap, GAP, is calculated by subtracting the existing neighborhood canopy from the density adjusted target, that is: <i>GAP = GOAL – EC, where EC is existing % canopy for that neighborhood</i></p>
+         <p class="small">The neighborhood canopy gap, GAP, is calculated by subtracting the existing neighborhood canopy from the density adjusted target, that is: <i>GAP = GOAL – EC,</i> where <i>EC</i> is % existing canopy for that neighborhood</p>
          <p class="small">The canopy Gap is then normalized to a score from 0-100.</p>
-         <p class="small">GAPScore=100*GAP - GAPminGAPmax - GAPmin , where:</p>
+         <p class="small"><i>GAP<sub>Score </sub> = 100 * GAP / GAP<sub>max</sub> </i>, where:</p>
          <ul class="small">
-             <li>GAPmax is the maximum GAP value citywide for that indicator; and</li>
-             <li>GAPmin is the minimum GAP value citywide for that indicator.</li>
+             <li><i>GAP<sub>max </sub> </i> is the maximum GAP value citywide for that indicator; and</li>
          </ul>
-         <p class="small"><strong>Note: </strong>If the GAP is negative (i.e. Existing canopy is greater than the neighborhood goal), it is adjusted to 0 before normalizing to create the gap score. </p>
+         <p class="small"><strong>Notes: </strong>If the <i>GAP</i> is negative (i.e. Existing canopy is greater than the neighborhood goal), it is adjusted to 0 before normalizing to create the gap score. Also, if <i>Gap<sub>max</sub> = 0</i>, then <i>Gap<sub>Score</sub></i> is set to 0 as well. </p>
 
          <h4>Step 3: The Priority Index</h4>
          <p class="small">The Priority Index is developed to help prioritize the need for planting to achieve Tree Equity. The priority index includes the following equally-weighted characteristics:</p>
@@ -76,21 +78,22 @@ title: home
              <li><i>Income:</i>  Percentage of population below 200% of poverty</li>
              <li><i>Employment:</i> Unemployment rate</li>
              <li><i>Race:</i> Percentage of people who are not white non-Hispanic</li>
+             <li><i>Age:</i> Ratio of seniors and children to working-age adults</li>
              <li><i>Climate:</i> Urban Heat Island severity</li>
          </ul>
          <p class="small">These measures are normalized and combined to create a simple priority index from 0 to 1, where 1 indicates a greater amount of inequity. The indices, N, are calculated as follows:</p>
-         <p class="small">N=x-xminxmax - xmin , where, for each indicator, N,</p>
+         <p class="small"><i>N<sub>i</sub> = (x<sub>i</sub> - x<sub>i,min </sub>) / (x<sub>i,max</sub> - x<sub>i,min</sub>)</i> , where, for each indicator, <i>N<sub>i</sub>,</i></p>
          <ul class="small">
-             <li>x is the value for that neighborhood for that indicator;</li>
-             <li>xmax is the maximum value citywide for that indicator; and</li>
-             <li>xmin is the minimum value citywide for that indicator.</li>
+             <li><i>x<sub>i</sub></i> is the value for that neighborhood for that indicator, <i>i;</i></li>
+             <li><i>x<sub>i,max</sub></i> is the maximum value citywide for that indicator, <i>i;</i> and</li>
+             <li><i>x<sub>i,min</sub></i> is the minimum value citywide for that indicator, <i>i.</i></li>
          </ul>
-         <p class="small">The Priority index, E, is then calculated as follows: <i>E = (N1 + N2 + N3 + N4) / 4  , where Ni refers to each indicator value (income, employment, race, or climate)</i></p>
+         <p class="small">The Priority index, <i>E</i>, is then calculated as follows: <i>E = (N<sub>1</sub> + N<sub>2</sub> + N<sub>3</sub> + N<sub>4</sub>) / 4  , where N<sub>i</sub> refers to each indicator value (income, employment, race, age, or climate)</i></p>
 
          <h4>Step 4: Tree Equity Score</h4>
          <p class="small">Tree equity Score is calculated by multiplying the Baseline Gap Score by the Equity Index, simply:</p>
-         <p class="small">Tree Equity Score = 100 * (1 - GAPScore * E)</p>
-         <p class="small">A lower tree equity score indicates a greater level of need for tree canopy.</p>
+         <p class="small"><i>Tree Equity Score = 100 * (1 - GAP<sub>Score</sub> * E)</i></p>
+         <p class="small">A lower tree equity score indicates a greater priority for tree canopy.</p>
 
     </section>
     </div>

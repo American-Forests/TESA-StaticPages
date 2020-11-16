@@ -12,6 +12,8 @@
 @import "rhode-island";
 
 $te-p-stack-size: $te-space-m;
+$te-row-gap-default: 64px;
+$te-row-gap-l: 80px;
 
 html, body{
   @include font-smoothing();
@@ -89,7 +91,7 @@ p.small{
 
     .layout{
       display:grid;
-      grid-row-gap:64px;
+      grid-row-gap: $te-row-gap-default;
 
       @include for-tablet-landscape-up {
         grid-template-columns: repeat(12, 1fr);
@@ -144,7 +146,7 @@ p.small{
   .equity-score{
     padding:80px 0;
     display:grid;
-    grid-row-gap:64px;
+    grid-row-gap: $te-row-gap-default;
 
     @include for-tablet-landscape-up { 
       grid-template-columns: repeat(12, 1fr);
@@ -251,7 +253,7 @@ p.small{
       display:grid;
       width:100%;
       grid-template-columns: repeat(2, 1fr); 
-      grid-row-gap:64px;
+      grid-row-gap: $te-row-gap-default;
       margin-bottom:72px;
       grid-column-gap:$te-space-l;
 
@@ -303,7 +305,7 @@ p.small{
 
     .layout{
       display: grid;
-      grid-row-gap: 80px;
+      grid-row-gap: $te-row-gap-l;
 
       @include for-tablet-landscape-up {
         grid-template-columns: repeat(3, 1fr);
@@ -440,13 +442,27 @@ p.small{
       background: url("../static/media/cta-banner-bg.png");
     }
 
+    .layout{
+      display:grid;
+      grid-row-gap: $te-row-gap-l;
+
+      @include for-tablet-landscape-up {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: $te-row-gap-l;
+      }
+    }
+
+    .layout__col {
+      text-align: center;
+    }
+
     h4{
       text-align: center;
-      margin-bottom:$te-space-l;
+      margin-bottom:$te-space-xl;
     }
 
     p{
-      margin-bottom: $te-p-stack-size;
+      margin-bottom: $te-space-xl;
       text-align: center;
     }
   }

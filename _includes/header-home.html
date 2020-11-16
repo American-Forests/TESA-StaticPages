@@ -1,7 +1,17 @@
 <header>
     <div class="banner">Powered by <span>American Forests</span></div>
     <div class="content-wrapper">
-        <a href="{{site.baseurl}}/"><img class="logo" src="{{site.baseurl}}/static/media/logo.svg"></a>
+        <div class="logo">
+          <a class="logo__col" href="{{site.baseurl}}/">
+            <img alt="Tree Equity logo" class="logo__site" src="{{site.baseurl}}/static/media/tree-equity-score-logo.svg">
+          </a>
+          <div class="logo__col">
+            <div class="logo__eyebrow">
+              Powered By
+            </div>
+            <img alt="American Forests logo" class="logo__sponsor" src="{{site.baseurl}}/static/media/american-forests-logo-horizontal.png" />
+          </div>
+        </div>
         <ul class="nav align-content-center">
                 <!-- <a class="btn btn-outline-success" href="https://rhodeisland.treeequityscore.org">Launch App</a> -->
                 <!-- <button class="btn btn-outline-success btn-sm" style="height:40%;" href="https://rhodeisland.treeequityscore.org">Launch App</button> -->
@@ -13,7 +23,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="/about">About</a>
                     <a class="dropdown-item" href="/methodology">Methodology</a>
-                    <a class="dropdown-item" href="/dictionary">Data Dictionary</a>
+                    <a class="dropdown-item" href="/glossary">Glossary</a>
                     <a class="dropdown-item" href="/datasources">Data Sources</a>
                     <a class="dropdown-item" href="/FAQ">FAQ</a>
                     <a class="dropdown-item" href="/privacy">Privacy</a>

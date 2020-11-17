@@ -382,8 +382,9 @@ p.small{
         position: relative;
 
         img{
-          height: 100%;
-          width: auto;
+          height: auto;
+          width: 100%;
+          max-width: 100%;
           position: absolute;
         }
       }
@@ -527,4 +528,55 @@ p.small{
 
 .te-text-color-brand {
   color: $green-59;
+}
+
+.partners{
+  padding:80px 0 88px 0;
+  border-bottom: 1px solid rgba($gray1,0.15);
+
+  @include for-tablet-landscape-up {   
+    padding:80px 0 120px 0;
+  }
+
+  h4{
+    text-align: center;
+    margin:0 auto;
+    margin-bottom:24px;
+  }
+
+  p{
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:56px;
+
+    @include for-tablet-landscape-up {   
+      margin-bottom:88px;
+    }
+  }
+
+  .layout{
+
+    @include for-tablet-landscape-up {   
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap:24px;
+    }
+  }
+
+  .column{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom:88px;
+
+    &:last-child{
+      margin-bottom:0;
+    }
+
+    @include for-tablet-landscape-up {   
+      margin-bottom:0;
+    }
+
+  }
 }

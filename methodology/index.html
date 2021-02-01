@@ -22,11 +22,11 @@ title: home
             <li>Census ACS 2018 5-year city and block group Median Income estimates</li>
         </ul>
 
-        <p class="small">To identify a baseline canopy target, we use generalized natural biome baseline targets selected in conjunction with the United States Forests Service. We select the baseline target based on the location of the municipality.</p>
+        <p class="small">To identify a baseline canopy target, we use generalized natural biome baseline targets selected in conjunction with the USDA Forest Service. We select the baseline target based on the location of the municipality.</p>
         <ul class="small">
             <li>Forest: 40%</li>
-            <li>Grassland: 25%</li>
-            <li>Desert: 20%</li>
+            <li>Grassland: 20%</li>
+            <li>Desert: 15%</li>
         </ul>
         <p class="small">This target is then adjusted based on population density to estimate a neighborhood goal. Based on research completed by The Nature Conservancy, adjustments are made using the following table:</p>
         <table class="table mb-2 mt-4 te-container">
@@ -64,11 +64,11 @@ title: home
             
 
          <h4>Step 2: The Canopy Gap</h4>
-         <p class="small">The neighborhood canopy gap, GAP, is calculated by subtracting the existing neighborhood canopy from the density adjusted target, that is: <i>GAP = GOAL – EC,</i> where <i>EC</i> is % existing canopy for that neighborhood</p>
+         <p class="small">The neighborhood canopy gap, <i>GAP</i>, is calculated by subtracting the existing neighborhood canopy from the density adjusted target, that is: <i>GAP = GOAL – EC,</i> where <i>EC</i> is % existing canopy for that neighborhood</p>
          <p class="small">The canopy Gap is then normalized to a score from 0-100.</p>
          <p class="small"><i>GAP<sub>Score </sub> = 100 * GAP / GAP<sub>max</sub> </i>, where:</p>
          <ul class="small">
-             <li><i>GAP<sub>max </sub> </i> is the maximum GAP value citywide for that indicator; and</li>
+             <li><i>GAP<sub>max </sub> </i> is the maximum <i>GAP</i> value citywide for that indicator; and</li>
          </ul>
          <p class="small"><strong>Notes: </strong>If the <i>GAP</i> is negative (i.e. Existing canopy is greater than the neighborhood goal), it is adjusted to 0 before normalizing to create the gap score. Also, if <i>Gap<sub>max</sub> = 0</i>, then <i>Gap<sub>Score</sub></i> is set to 0 as well. </p>
 
@@ -91,9 +91,9 @@ title: home
          <p class="small">The Priority index, <i>E</i>, is then calculated as follows: <i>E = (N<sub>1</sub> + N<sub>2</sub> + N<sub>3</sub> + N<sub>4</sub>) / 4  , where N<sub>i</sub> refers to each indicator value (income, employment, race, age, or climate)</i></p>
 
          <h4>Step 4: Tree Equity Score</h4>
-         <p class="small">Tree equity Score is calculated by multiplying the Baseline Gap Score by the Equity Index, simply:</p>
-         <p class="small"><i>Tree Equity Score = 100 * (1 - GAP<sub>Score</sub> * E)</i></p>
-         <p class="small">A lower tree equity score indicates a greater priority for tree canopy.</p>
+         <p class="small">Tree Equity Score, <i>TES,</i> is calculated by multiplying the Baseline Gap Score by the Equity Index, simply:</p>
+         <p class="small"><i>TES = 100 * (1 - GAP<sub>Score</sub> * E)</i></p>
+         <p class="small">A lower Tree Equity Score indicates a greater priority for closing the tree canopy gap.</p>
 
     </section>
     </div>

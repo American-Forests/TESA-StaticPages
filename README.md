@@ -1,4 +1,4 @@
-## To Develop microsite for the 'Tree Equity Score' Project
+## To Develop microsite for the 'Tree Equity Score' Project becaue Rohit says so
 
 1. To run the site locally on your machine you'll need to first install Jekyll: https://jekyllrb.com/docs/.
 1. To build the site and make it available on a local server:  `bundle exec jekyll serve `
